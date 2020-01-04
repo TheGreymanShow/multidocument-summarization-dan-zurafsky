@@ -6,11 +6,8 @@ Created on Tue Sep 25 16:24:15 2018
 """
 from src.config import *
 import numpy as np
-import pandas as pd
 from unidecode import unidecode
-import requests
-import re 
-import nltk
+import re
 
 
 def article_clean_up(text_):

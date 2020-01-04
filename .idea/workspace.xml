@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be1cbf0a-3f5a-4f31-a330-e4159b72da62" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cleaning.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/log_likelihood_ratio.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mmr_ranking.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/vectorization.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/log_likelihood_ratio.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/log_likelihood_ratio.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mmr_ranking.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/mmr_ranking.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/multidoc_summarization" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,20 +15,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="multidoc_summarization" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/multidoc_summarization">
+      <file leaf-file-name="multidoc_summarization.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/multidoc_summarization.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="9" column="17" lean-forward="true" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mmr_ranking.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/mmr_ranking.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+            <state relative-caret-position="379">
+              <caret line="163" column="38" lean-forward="true" selection-start-line="163" selection-start-column="38" selection-end-line="163" selection-end-column="38" />
+              <folding>
+                <element signature="e#85#116#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -61,10 +52,12 @@
         <option value="$PROJECT_DIR$/src/vectorization.py" />
         <option value="$PROJECT_DIR$/src/config.py" />
         <option value="$PROJECT_DIR$/src/mmr_ranking.py" />
+        <option value="$PROJECT_DIR$/src/cleaning.py" />
+        <option value="$PROJECT_DIR$/src/log_likelihood_ratio.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="541" />
     <option name="y" value="325" />
     <option name="width" value="598" />
@@ -128,7 +121,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24960339" />
@@ -154,10 +147,13 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/multidoc_summarization">
+    <entry file="file://$PROJECT_DIR$/src/multidoc_summarization.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5016">
           <caret line="209" column="37" lean-forward="true" selection-start-line="209" selection-start-column="37" selection-end-line="209" selection-end-column="37" />
+          <folding>
+            <element signature="e#85#116#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -174,9 +170,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/log_likelihood_ratio.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/config.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
@@ -191,6 +184,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/cleaning.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="11" column="54" lean-forward="true" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="54" />
+          <folding>
+            <element signature="e#85#94#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/log_likelihood_ratio.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/vectorization.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -198,17 +208,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/multidoc_summarization">
+    <entry file="file://$PROJECT_DIR$/src/mmr_ranking.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="17" lean-forward="true" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        <state relative-caret-position="-263">
+          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+          <folding>
+            <element signature="e#85#109#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/mmr_ranking.py">
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+        <state relative-caret-position="-2378" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/multidoc_summarization.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="163" column="38" lean-forward="true" selection-start-line="163" selection-start-column="38" selection-end-line="163" selection-end-column="38" />
+          <folding>
+            <element signature="e#85#116#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

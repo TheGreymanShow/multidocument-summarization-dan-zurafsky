@@ -5,30 +5,29 @@ Created on Wed May 15 15:02:44 2019
 
 @author: sachitnagpal
 """
-#%%
+
 import nltk
 import numpy as np
 from collections import Counter
 from scipy.stats import power_divergence
-from cleaning import PreProcessing, clean_text, remove_punctuations
+from src.cleaning import PreProcessing, clean_text, remove_punctuations
+from nltk import word_tokenize
 
-from nltk import sent_tokenize
-
-#%%
 similarity_parameter = 100
-#%%
 tokenizer = nltk.data.load('tokenizers/punkt/english.pickle')
+
+
 def split_by_sentence(text):
     return tokenizer.tokenize(text)
 
-#%%
+
 def cleanText(text):
     text = PreProcessing(text)
     text = clean_text(text)
     text = remove_punctuations(text)
     return text
 
-#%%
+
 def LLR_all_words(input_text, corpus):
     global wcI, wcB
 #    bg_corpus = [i for i in corpus if i!=input_text]
@@ -49,15 +48,11 @@ def LLR_all_words(input_text, corpus):
         LLR_words[word] = power_divergence(f_exp=exp, f_obs=obs, lambda_=0).statistic[0]
     return LLR_words
 
-#%%
-
-from nltk import word_tokenize
 
 def LLR_all_sentences(input_text, corpus, query, i):
     cleanQuery = cleanText(query)
     input_sentences = sent_tokenize(input_text)
     input_sentences = [sent for sent in input_sentences if len(word_tokenize(sent))>6]
-    
 
     llrWords = LLR_all_words(input_text, corpus)
     output = []
